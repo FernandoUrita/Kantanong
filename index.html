@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANTANONG - Kumanta at Matuto ng Tayutay</title>
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="video-container">
+                <iframe id="modalVideoFrame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🎵</span>
+                <h1>KANTANONG</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#categories">Mga Tayutay</a></li>
+                    <li><a href="#videos">Mga Video</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#quiz">Subukan</a></li>
+                    <li><a href="#about">Tungkol Sa Amin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Matuto ng Tayutay sa Pamamagitan ng Musika at Video</h2>
+            <p>Ang KANTANONG ay isang makabagong paraan upang matutunan ang iba't ibang uri ng tayutay sa pamamagitan ng mga awitin, video, at interactive na mga aktibidad.</p>
+            <div class="hero-buttons">
+                <a href="#categories" class="cta-button">Simulan ang Pag-aaral</a>
+                <a href="#" class="hero-video-btn" id="watchIntroBtn">Panoorin ang Intro Video</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <main class="container">
+        <section id="videos" class="video-section">
+            <div class="section-title">
+                <h2>Mga Video Tutorial</h2>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail" data-video-id="KmqWttuWiRY">
+                        <img src="images/asdasdsa.jpg" alt="Simile Video">
+                        <div class="play-icon-overlay">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Simile (Pagtutulad)</h3>
+                        <p>Alamin kung paano gamitin ang simile o pagtutulad sa pamamagitan ng musika at halimbawa.</p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail" data-video-id="nzBVRktb4qc">
+                        <img src="images/asws.jpg" alt="Metapora Video">
+                        <div class="play-icon-overlay">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Metapora (Pagwawangis)</h3>
+                        <p>Tuklasin ang kahulugan at mga halimbawa ng metapora sa masayang paraan.</p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail" data-video-id="yLzgxR8LAN4">
+                        <img src="images/sxxx.jpg" alt="Personipikasyon Video">
+                        <div class="play-icon-overlay">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Personipikasyon</h3>
+                        <p>Paano nagbibigay-buhay ang personipikasyon sa mga bagay na walang buhay?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="categories">
+            <div class="section-title">
+                <h2>Mga Uri ng Tayutay</h2>
+            </div>
+            
+            <div class="categories">
+                <div class="category-card">
+                    <div class="category-icon">🌉</div>
+                    <div class="category-content">
+                        <h3>Simile (Pagtutulad)</h3>
+                        <p>Ito ay paghahambing ng dalawang magkaibang bagay, tao, o pangyayari na ginagamitan ng mga salitang tulad ng, parang, gaya ng, kawangis ng, at iba pa.</p>
+                        <a href="#simileModal" class="learn-more">Matuto Pa</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🔥</div>
+                    <div class="category-content">
+                        <h3>Metapora (Pagwawangis)</h3>
+                        <p>Ito ay tuwirang paghahambing na hindi ginagamitan ng mga salitang tulad ng, parang, at iba pa. Nagwawangis ito dahil inihahantulad ang isang bagay sa ibang bagay.</p>
+                        <a href="#metaporaModal" class="learn-more">Matuto Pa</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">👤</div>
+                    <div class="category-content">
+                        <h3>Personipikasyon (Pagsasatao)</h3>
+                        <p>Ito ay pagbibigay ng mga katangiang pantao sa mga bagay na walang buhay o sa mga hayop upang gawing mabisa ang paglalarawan.</p>
+                        <a href="#personModal" class="learn-more">Matuto Pa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured">
+            <div class="section-title">
+                <h2>Featured na Tayutay: Simile</h2>
+            </div>
+            
+            <div class="featured">
+                <h2>Tulad ng Simile</h2>
+                
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <p>Ang simile o pagtutulad ay isang uri ng tayutay na ginagamit upang ihambing ang dalawang magkaibang bagay gamit ang mga salitang tulad ng, parang, gaya ng, animo, kasing, sing, at iba pa.</p>
+                        <p>Halimbawa:</p>
+                        <ul>
+                            <li>Ang kanyang mga mata ay kumikislap <strong>tulad</strong> ng mga bituin.</li>
+                            <li>Siya ay <strong>parang</strong> leon sa tapang.</li>
+                            <li>Ang kanyang ngiti ay <strong>gaya</strong> ng bukang-liwayway.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="featured-video">
+                        <div class="featured-video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="quiz">
+        <div class="section-title">
+            <h2>Subukan Natin ang Iyong Natutunan</h2>
+        </div>
+        
+        <div class="quiz-section">
+            <!-- Quiz Start Form -->
+        <div class="quiz-start-form" id="quizStartForm">
+            <h2>Maglagay ng iyong pangalan upang simulan ang pagsusulit</h2>
+            <div class="form-group">
+                <label for="userName">Buong Pangalan:</label>
+                <input type="text" id="userName" required>
+            </div>
+            <div class="form-group">
+                <label for="userEmail">Email Address:</label>
+                <input type="email" id="userEmail" required>
+            </div>
+            <button id="startQuizBtn">Simulan ang Pagsusulit</button>
+        </div>
+        
+        <!-- Quiz Questions -->
+        <div class="quiz-questions-container" id="quizQuestionsContainer">
+            <h2 id="quizUserGreeting"></h2>
+            
+            <div class="quiz-question">
+                <h3>1. Patungkol saan ang Simile?</h3>
+                <div class="quiz-options">
+                    <button class="quiz-option">A. Pagbibigay buhay sa mga bagay</button>
+                    <button class="quiz-option" data-correct="true">B. Pagtutulad ng dalawang magkaibang bagay</button>
+                    <button class="quiz-option">C. Pag-uulit ng mga tunog</button>
+                    <button class="quiz-option">D. Pagpapahayag ng damdamin</button>
+                </div>
+            </div>
+            
+            <div class="quiz-question">
+                <h3>2. Alin sa mga sumusunod ang halimbawa ng Simile?</h3>
+                <div class="quiz-options">
+                    <button class="quiz-option">A. Ang buhay ay isang gulong</button>
+                    <button class="quiz-option" data-correct="true">B. Ang mga bituin ay parang mga diamante sa langit</button>
+                    <button class="quiz-option">C. Ang araw ay ngumiti sa akin</button>
+                    <button class="quiz-option">D. Ang hangin ay humahalik sa mga dahon</button>
+                </div>
+            </div>
+            
+            <div class="quiz-question">
+                <h3>3. Saan ginagamit ang Simile?</h3>
+                <div class="quiz-options">
+                    <button class="quiz-option">A. Sa mga tekstong pang-agham lamang</button>
+                    <button class="quiz-option">B. Sa mga pormal na sulatin</button>
+                    <button class="quiz-option" data-correct="true">C. Sa tula, kwento, at awitin</button>
+                    <button class="quiz-option">D. Sa mga instruksyon lamang</button>
+                </div>
+            </div>
+            
+            <button id="submitQuizBtn">Tapos na - Ipadala ang mga sagot</button>
+        </div>
+        
+        <!-- Quiz Complete -->
+        <div class="quiz-complete" id="quizComplete">
+            <h2>Natapos mo na ang pagsusulit!</h2>
+            <div class="quiz-score" id="quizScore"></div>
+            <p id="quizFeedback"></p>
+            <button id="sendResultsBtn">Ipadala ang resulta sa email</button>
+        </div>
+    </div>
+    </section>
+        
+        <section id="about">
+            <div class="section-title">
+                <h2>Tungkol Sa KANTANONG</h2>
+            </div>
+            
+            <div class="featured" style="background-color: var(--army-green-dark);">
+                <div style="max-width: 800px; text-align: center;">
+                    <h2>Kantanong: Kumanta at Matuto</h2>
+                    <p>Ang Kantanong ay isang educational app na gumagamit ng mga awitin at video upang mas mapadali at maging masaya ang pag-aaral ng mga araling pangwika tulad ng tayutay. Sa pamamagitan ng musika at visual aids, natututo ang mga mag-aaral na kilalanin at gamitin ang iba't ibang uri ng tayutay sa malikhaing paraan.</p>
+                    <p>Layunin ng Kantanong na gawing mas engaging at memorable ang pag-aaral ng Filipino, lalo na ng mga tayutay, sa pamamagitan ng pagkombina ng musika, video, at interactive na mga aktibidad.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#categories">Mga Tayutay</a>
+                <a href="#videos">Mga Video</a>
+                <a href="#featured">Featured</a>
+                <a href="#quiz">Subukan</a>
+                <a href="#about">Tungkol Sa Amin</a>
+            </div>
+            <p>KANTANONG - Kumanta at Matuto | Maraming Salamat!</p>
+            <p>© 2023 Kantanong. Lahat ng Karapatan ay Nakalaan.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Video Modal -->
+    <!-- Tayutay Modals -->
+    <div class="tayutay-modal" id="simileModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Simile (Pagtutulad)</h2>
+            <div class="modal-body">
+                <p><strong>Ang simile ay paghahambing ng dalawang magkaibang bagay gamit ang:</strong></p>
+                <ul>
+                    <li>Tulad ng</li>
+                    <li>Parang</li>
+                    <li>Gaya ng</li>
+                    <li>Kasing-</li>
+                </ul>
+            
+                <div class="example-section">
+                    <h3>Mga Halimbawa sa Musika:</h3>
+                    <div class="example-card">
+                        <p>"<em>Ang pag-ibig mo ay <strong>parang</strong> ilaw sa dilim</em>"</p>
+                        <p class="song-info">- Mula sa kanta: "Ilaw" by SB19</p>
+                    </div>
+                </div>
+            
+                <button class="cta-button video-btn" data-video-id="9Ns8DztSfwo">Panoorin ang Video Lesson</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Metapora Modal -->
+    <div class="tayutay-modal" id="metaporaModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Metapora (Pagwawangis)</h2>
+            <div class="modal-body">
+                <p><strong>Direktang paghahambing nang <u>walang</u> gamit na "tulad ng" o "parang":</strong></p>
+                <ul>
+                    <li>Nagbibigay ng mas malalim na kahulugan</li>
+                    <li>Ginagamit sa tula at awitin</li>
+                </ul>
+            
+                <div class="example-section">
+                    <h3>Halimbawa sa Musika:</h3>
+                    <div class="example-card">
+                        <p>"<em>Ikaw ang <strong>liwanag</strong> sa aking dilim</em>"</p>
+                        <p class="song-info">- Mula sa kanta: "Liwanag" by Moira</p>
+                    </div>
+
+                    <div class="example-card">
+                        <p>"<em>Ang buhay ay <strong>isang gulong</strong>, minsan nasa ibabaw, minsan nasa ilalim</em>"</p>
+                    </div>
+                </div>
+
+                <button class="cta-button video-btn" data-video-id="abc12345678">Panoorin ang Video Lesson</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personipikasyon Modal -->
+    <div class="tayutay-modal" id="personModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Personipikasyon (Pagsasatao)</h2>
+            <div class="modal-body">
+                <p><strong>Pagbibigay ng <u>katangiang pantao</u> sa mga bagay o hayop:</strong></p>
+                <ul>
+                    <li>Ginagawang "buhay" ang mga bagay</li>
+                    <li>Karaniwan sa mga kuwento at tula</li>
+                </ul>
+            
+                <div class="example-section">
+                    <h3>Mga Halimbawa:</h3>
+                    <div class="example-card">
+                        <p>"<em><strong>Ngumiti</strong> ang araw ng umaga</em>"</p>
+                    </div>
+                
+                    <div class="example-card">
+                        <p>"<em>Ang mga bituin ay <strong>nagkukuwentuhan</strong> sa langit</em>"</p>
+                        <p class="song-info">- Mula sa kanta: "Bituin" by Sunkissed Lola</p>
+                    </div>
+                </div>
+
+                <button class="cta-button video-btn" data-video-id="YOUR_VIDEO_ID">Panoorin ang Video Lesson</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Place this near your other modals -->
+    <div id="videoLessonModal" class="tayutay-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="lessonVideoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modals -->
+    <script src="script/modal.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+        // Video Modal Functionality
+        const videoModal = document.getElementById('videoModal');
+        const modalVideoFrame = document.getElementById('modalVideoFrame');
+        const closeModal = document.getElementById('closeModal');
+        const watchIntroBtn = document.getElementById('watchIntroBtn');
+        const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+        
+
+        // Initialize EmailJS with your Public Key
+        // Replace these with your actual EmailJS credentials
+        emailjs.init('KZg1auPTnCvcF5Ko3');
+        const SERVICE_ID = 'service_hlmt6j1';
+        const TEMPLATE_ID = 'template_mr7yebw';
+        
+        // Quiz variables
+        let userName = '';
+        let userEmail = '';
+        let userScore = 0;
+        let totalQuestions = 0;
+        
+        // DOM Elements
+        const startForm = document.getElementById('quizStartForm');
+        const questionsContainer = document.getElementById('quizQuestionsContainer');
+        const completeSection = document.getElementById('quizComplete');
+        const startBtn = document.getElementById('startQuizBtn');
+        const submitBtn = document.getElementById('submitQuizBtn');
+        const sendResultsBtn = document.getElementById('sendResultsBtn');
+        const userGreeting = document.getElementById('quizUserGreeting');
+        const scoreDisplay = document.getElementById('quizScore');
+        const feedbackDisplay = document.getElementById('quizFeedback');
+        
+        // Event Listeners
+        startBtn.addEventListener('click', startQuiz);
+        submitBtn.addEventListener('click', submitQuiz);
+        sendResultsBtn.addEventListener('click', sendResults);
+        
+        document.querySelectorAll('.quiz-option').forEach(option => {
+    option.addEventListener('click', function() {
+        const questionDiv = this.closest('.quiz-question');
+        const isCorrect = this.getAttribute('data-correct') === 'true';
+        
+        // Disable all options in this question
+        questionDiv.querySelectorAll('.quiz-option').forEach(opt => {
+            opt.disabled = true;
+            
+            // Highlight correct answer
+            if (opt.getAttribute('data-correct') === 'true') {
+                opt.classList.add('correct');
+            }
+        });
+        
+        // Mark selected option
+        if (isCorrect) {
+            this.classList.add('correct');
+            userScore++;
+        } else {
+            this.classList.add('incorrect');
+        }
+        
+        // Check if all questions answered
+        checkQuizCompletion();
+    });
+});
+
+function checkQuizCompletion() {
+    const answeredQuestions = document.querySelectorAll('.quiz-option[disabled]').length / 4;
+    if (answeredQuestions === totalQuestions) {
+        // Show results
+        const percentage = Math.round((userScore / totalQuestions) * 100);
+        alert(`Quiz completed! Your score: ${userScore}/${totalQuestions} (${percentage}%)`);
+    }
+}
+        
+        function startQuiz() {
+            userName = document.getElementById('userName').value.trim();
+            userEmail = document.getElementById('userEmail').value.trim();
+            
+            // Validate inputs
+            if (!userName) {
+                alert('Pakilagay ang iyong pangalan');
+                return;
+            }
+            
+            if (!userEmail || !userEmail.includes('@')) {
+                alert('Pakilagay ang wastong email address');
+                return;
+            }
+            
+            // Initialize quiz
+            startForm.style.display = 'none';
+            questionsContainer.style.display = 'block';
+            userGreeting.textContent = `Kumusta, ${userName}! Sagutin ang mga sumusunod:`;
+            submitBtn.style.display = 'block';
+            
+            // Count questions
+            totalQuestions = document.querySelectorAll('.quiz-question').length;
+            userScore = 0; // Reset score
+        }
+        
+        function submitQuiz() {
+            const answeredQuestions = document.querySelectorAll('.quiz-option[disabled]').length / 4;
+            
+            if (answeredQuestions < totalQuestions) {
+                alert('Pakisagot muna ang lahat ng mga tanong bago magsumite');
+                return;
+            }
+            
+            // Show results
+            questionsContainer.style.display = 'none';
+            completeSection.style.display = 'block';
+            
+            const percentage = Math.round((userScore / totalQuestions) * 100);
+            scoreDisplay.textContent = `Iyong iskor: ${userScore}/${totalQuestions} (${percentage}%)`;
+            
+            // Provide feedback
+            let feedback = '';
+            if (percentage >= 80) {
+                feedback = 'Mahusay! Napakagaling ng iyong pag-unawa sa simile!';
+            } else if (percentage >= 50) {
+                feedback = 'Magandang simula! May konting pag-aaral pa at mas gagaling ka!';
+            } else {
+                feedback = 'Subukan mong muli! Maaari mong balikan ang mga aralin at subukan ulit mamaya.';
+            }
+            feedbackDisplay.textContent = feedback;
+        }
+        
+        function sendResults() {
+            const percentage = Math.round((userScore / totalQuestions) * 100);
+            const currentDate = new Date().toLocaleDateString('en-PH', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Prepare email data
+            const templateParams = {
+                user_name: userName,
+                user_email: userEmail,
+                score: `${userScore}/${totalQuestions}`,
+                percentage: percentage,
+                date: currentDate
+            };
+            
+            // Send email
+            emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
+                .then(() => {
+                    alert('Ang iyong iskor ay naipadala na! Salamat sa pagsubok!');
+                    sendResultsBtn.disabled = true;
+                    sendResultsBtn.textContent = 'Naipadala na ✓';
+                    sendResultsBtn.style.backgroundColor = '#2E7D32';
+                }, (error) => {
+                    alert('May problema sa pagpapadala. Pakisubukan muli mamaya.');
+                    console.error('Email sending failed:', error);
+                });
+        }
+
+
+        // Open modal for intro video
+        watchIntroBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modalVideoFrame.src = "https://www.youtube.com/embed/pY7Kzkpbll0";
+            videoModal.style.display = "flex";
+            document.body.style.overflow = "hidden";
+        });
+        
+        // Open modal for thumbnail videos
+        videoThumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const videoId = thumbnail.getAttribute('data-video-id');
+                modalVideoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                videoModal.style.display = "flex";
+                document.body.style.overflow = "hidden";
+            });
+        });
+        
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            modalVideoFrame.src = "";
+            videoModal.style.display = "none";
+            document.body.style.overflow = "auto";
+        });
+        
+        // Close modal when clicking outside
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                modalVideoFrame.src = "";
+                videoModal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        });
+        
+        // Audio Player Functionality
+        const audio = new Audio();
+        const playBtn = document.getElementById('play-btn');
+        const progressContainer = document.getElementById('progress-container');
+        const progress = document.getElementById('progress');
+        const timeDisplay = document.getElementById('time-display');
+        const lyricsLines = document.querySelectorAll('.lyrics-line');
+        
+        // Mock audio file (in a real implementation, this would be your actual audio file)
+        audio.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+        audio.volume = 0.7;
+        
+        // Play/Pause functionality
+        playBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playBtn.textContent = '❚❚';
+            } else {
+                audio.pause();
+                playBtn.textContent = '▶';
+            }
+        });
+        
+        // Update progress bar
+        audio.addEventListener('timeupdate', () => {
+            const currentTime = audio.currentTime;
+            const duration = audio.duration;
+            const progressPercent = (currentTime / duration) * 100;
+            progress.style.width = `${progressPercent}%`;
+            
+            // Update time display
+            const currentMinutes = Math.floor(currentTime / 60);
+            const currentSeconds = Math.floor(currentTime % 60).toString().padStart(2, '0');
+            const durationMinutes = Math.floor(duration / 60);
+            const durationSeconds = Math.floor(duration % 60).toString().padStart(2, '0');
+            
+            timeDisplay.textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
+            
+            // Highlight current lyric line (simplified version)
+            const currentLineIndex = Math.floor((currentTime / duration) * lyricsLines.length);
+            lyricsLines.forEach((line, index) => {
+                if (index === currentLineIndex) {
+                    line.classList.add('active');
+                } else {
+                    line.classList.remove('active');
+                }
+            });
+        });
+        
+        // Click on progress bar to seek
+        progressContainer.addEventListener('click', (e) => {
+            const width = progressContainer.clientWidth;
+            const clickX = e.offsetX;
+            const duration = audio.duration;
+            
+            audio.currentTime = (clickX / width) * duration;
+        });
+        
+        // Quiz functionality
+        const quizOptions = document.querySelectorAll('.quiz-option');
+        
+        quizOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const questionDiv = this.closest('.quiz-question');
+                const feedbackDiv = questionDiv.querySelector('.quiz-feedback');
+                
+                if (this.classList.contains('correct')) {
+                    this.classList.add('correct');
+                    feedbackDiv.classList.add('show');
+                    
+                    // Disable all options in this question
+                    questionDiv.querySelectorAll('.quiz-option').forEach(opt => {
+                        opt.disabled = true;
+                    });
+                } else {
+                    this.classList.add('incorrect');
+                }
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
